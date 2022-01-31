@@ -53,10 +53,10 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
 }
 class FirstTest {
     @Test
-    fun angleInRadian() {
+    fun seconds() {
         Assert.assertEquals(
-            8,
-            lesson1.task1.thirdDigit(3801),
+            30035,
+            lesson1.task1.seconds(8, 20, 35),
         )
     }
 }
@@ -64,10 +64,10 @@ class FirstTest {
 /**
  * Пример главной функции
  */
-fun main(args: Array<String>) {
-    val answer = quadraticEquationRoot(1.0, -3.0, 2.0)
-    println(answer)
-}
+//fun main(args: Array<String>) {
+//    val answer = quadraticEquationRoot(1.0, -3.0, 2.0)
+//    println(answer)
+//}
 
 /**
  * Тривиальная (3 балла).
