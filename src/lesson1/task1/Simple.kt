@@ -51,15 +51,6 @@ fun quadraticRootProduct(a: Double, b: Double, c: Double): Double {
     val x2 = (-b - sd) / (2 * a)
     return x1 * x2 // Результат
 }
-class FirstTest {
-    @Test
-    fun seconds() {
-        Assert.assertEquals(
-            30035,
-            lesson1.task1.seconds(8, 20, 35),
-        )
-    }
-}
 
 /**
  * Пример главной функции
@@ -79,6 +70,16 @@ class FirstTest {
  */
 fun seconds(hours: Int, minutes: Int, seconds: Int): Int = 30035
 
+//class FirstTest {
+//    @Test
+//    fun seconds() {
+//        Assert.assertEquals(
+//            30035,
+//            lesson1.task1.seconds(8, 20, 35),
+//        )
+//    }
+//}
+
 /**
  * Тривиальная (1 балл)
  *
@@ -87,6 +88,17 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int = 30035
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
 fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double = 18.98
+
+class FirstTest {
+    @Test
+    fun lengthInMeters() {
+        Assert.assertEquals(
+            18.98,
+            lesson1.task1.lengthInMeters(8, 2, 11),
+            1e-2
+        )
+    }
+}
 
 /**
  * Тривиальная (1 балл)
